@@ -5,6 +5,7 @@ import NoticeCard from "../NoticeCard"
 import Icon from "../Icon"
 import { faHouse } from "@fortawesome/free-solid-svg-icons"
 import SliderAuto from "../SliderAutoPlay"
+import Historys from "../Historys"
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -55,8 +56,17 @@ function Tabs() {
               SUPLEMENTOS
             </h2>
           </div>
+          <div
+            className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(6)}
+          >
+            <h2 className="title-tabs">
+              TRIVIAS
+            </h2>
+          </div>
         </div>
 
+        <Historys/>
         <SliderAuto/>        
 
         <div className="content-tabs">
@@ -250,28 +260,35 @@ function Tabs() {
           display: flex;
           flex-direction: column;
           position: relative;
-          width: 90%;
+          width: 100%;
           height: auto;
-          //background: #f1f1f1;
           margin: 20px auto 0;
           word-break: break-all;
-          //border: 1px solid rgba(0, 0, 0, 0.274);
         }
         .bloc-tabs {
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-wrap: wrap;
         }
         .tabs {
           padding: 15px;
           text-align: center;
-          width: 10%;
+          width: 150px;
           //background: rgba(128, 128, 128, 0.075);
           cursor: pointer;
           //border-bottom: 1px solid rgba(0, 0, 0, 0.274);
           box-sizing: content-box;
           position: relative;
           outline: none;
+        }
+        @media (max-width: 930px){
+          .tabs {
+            width: auto;
+          }
+          .title-tabs{
+            font-size: 14px !important;
+          }
         }
         .tabs:hover{
           color: red;
@@ -304,6 +321,8 @@ function Tabs() {
         }
         .content-tabs {
           flex-grow : 1;
+          width: 90%;
+          margin: 0 auto;
         }
         .content {
           background: white;

@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import React from 'react'
 import styled from 'styled-components'
 // import Link from 'next/link'
@@ -8,7 +10,7 @@ const NoticeCard = ({ title, redirect, image, mounth, i }) => {
       <a href={redirect}>
         <BlockNotice key={i}>
           <WrapperImage>
-            <img src={image} alt={title}/>
+            <img src={image} alt={title} height="" width=""/>
           </WrapperImage>
           <WrapperText>
             <h3>{mounth}</h3>

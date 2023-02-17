@@ -101,6 +101,29 @@
 {
     right: 30px;
 }
+@media (max-width: 900px) {
+    .slick-next{
+        right: 10px;
+    }
+    .slick-prev{
+        left: 3px;
+    }
+    .slick-prev:before{
+        font-size: 20px;
+    }
+    .slick-next:before{
+        font-size: 20px;
+    }
+}
+@media (max-width: 450px) {
+    .slick-next{
+        right: 1px;
+    }
+    .slick-prev{
+        left: 1px;
+    }
+}
+
 [dir='rtl'] .slick-next
 {
     right: auto;
