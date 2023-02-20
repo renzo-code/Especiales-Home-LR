@@ -82,15 +82,18 @@
 .slick-prev
 {
     left: 30px;
+    
 }
 [dir='rtl'] .slick-prev
 {
     right: -25px;
     left: auto;
+    
 }
 .slick-prev:before
 {
     content: '←';
+    display: none;
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -100,6 +103,7 @@
 .slick-next
 {
     right: 30px;
+    display: none !important;
 }
 @media (max-width: 900px) {
     .slick-next{

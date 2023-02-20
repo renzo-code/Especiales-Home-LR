@@ -3,25 +3,35 @@ import React from 'react'
 
 import styled from 'styled-components'
 
+
 const Historys = () => {
   return (
     <Wrapper>
       <NewsBlock>
         <WrapImg>
           <img src='https://imgmedia.larepublica.pe/640x377/larepublica/original/2023/02/17/63d9491542192e4843652adb.webp' alt=''/>
-          <h2>TITULAR DE LA NOTICIA TITULAR DE LA NOTICIA</h2>
+          <h2>
+            TITULAR DE LA NOTICIA TITULAR DE LA NOTICIA
+            ITULAR DE LA NOTICIA TITULAR DE LA NOTICIA
+          </h2>
         </WrapImg>
       </NewsBlock>
       <NewsBlock>
         <WrapImg>
           <img src='https://imgmedia.larepublica.pe/640x377/larepublica/original/2023/02/17/63d9491542192e4843652adb.webp' alt=''/>
-          <h2>TITULAR DE LA NOTICIA TITULAR DE LA NOTICIA</h2>
+          <h2>
+            TITULAR DE LA NOTICIA TITULAR DE LA NOTICIA
+            ITULAR DE LA NOTICIA TITULAR DE LA NOTICIA
+          </h2>
         </WrapImg>
       </NewsBlock>
       <NewsBlock>
         <WrapImg>
           <img src='https://imgmedia.larepublica.pe/640x377/larepublica/original/2023/02/17/63d9491542192e4843652adb.webp' alt=''/>
-          <h2>TITULAR DE LA NOTICIA TITULAR DE LA NOTICIA</h2>
+          <h2>
+            TITULAR DE LA NOTICIA TITULAR DE LA NOTICIA
+            ITULAR DE LA NOTICIA TITULAR DE LA NOTICIA
+          </h2>
         </WrapImg>
       </NewsBlock>
     </Wrapper>
@@ -32,13 +42,17 @@ export default Historys
 
 const Wrapper = styled.section`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 50px;
   align-items: center;
   height: auto;
   width: 100%;
   margin: 25px 0;
+
+  @media (max-width: 1020px){
+    display: none;
+  }
 `
 const NewsBlock = styled.div`
   height: 350px;

@@ -6,6 +6,8 @@ import Icon from "../Icon"
 import { faHouse } from "@fortawesome/free-solid-svg-icons"
 import SliderAuto from "../SliderAutoPlay"
 import Historys from "../Historys"
+import Carousel from "../Carousel"
+import CarouselPhone from "../Carousel/default"
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -67,7 +69,9 @@ function Tabs() {
         </div>
 
         <Historys/>
-        <SliderAuto/>        
+        <CarouselPhone/>
+        {/* <Carousel/> */}
+        <SliderAuto/>       
 
         <div className="content-tabs">
           <div
@@ -270,6 +274,7 @@ function Tabs() {
           justify-content: center;
           align-items: center;
           flex-wrap: wrap;
+          margin-bottom: 20px;
         }
         .tabs {
           padding: 15px;

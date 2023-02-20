@@ -125,19 +125,6 @@ const SliderAuto = () => {
             </h3>
           </div>
         </Content>
-        <Content>
-          <section>
-            <h3>6</h3>
-          </section>
-          <div>
-            <div>
-              <img src='https://imgmedia.larepublica.pe/640x377/larepublica/original/2023/02/17/63d9491542192e4843652adb.webp' alt=''/>
-            </div>
-            <h3>
-              Eduardo Pachas fue contratado por S/75.000 en el despacho presidencial de Castillo durante 2021
-            </h3>
-          </div>
-        </Content>
       </Slider>
     </ContainerCarrousel>
   )
@@ -148,6 +135,7 @@ export default SliderAuto
 const ContainerCarrousel = styled.div`
   margin: 30px 0;
   background-color: #E7E3E2;
+  padding-bottom: 10px;
 
   h2{
     font-size: 25px;
@@ -219,6 +207,7 @@ const Content = styled.div`
       font-size: 17px;
       font-weight: 100;
       line-height: 21px;
+      word-break: normal;
 
       &:hover{
       text-decoration: underline;
