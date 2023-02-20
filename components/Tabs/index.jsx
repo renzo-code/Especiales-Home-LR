@@ -290,6 +290,7 @@ function Tabs() {
         @media (max-width: 930px){
           .tabs {
             width: auto;
+            padding: 10px;
           }
           .title-tabs{
             font-size: 14px !important;

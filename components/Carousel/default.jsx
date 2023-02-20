@@ -84,10 +84,11 @@ const WrapImg = styled.div`
   h2{
     position: absolute;
     bottom: 0;
-    font-size: 17px;
+    font-size: 19px;
     color: white;
     padding: 10px;
-    line-height: 20px;
+    line-height: 25px;
+    word-break: normal;
     
     &:hover{
       text-decoration: underline;

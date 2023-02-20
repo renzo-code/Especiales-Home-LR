@@ -175,6 +175,7 @@ const Content = styled.div`
       text-align: center;
       line-height: 20px;
       color: red;
+      word-break: normal;
 
       @media (max-width: 550px){
         font-size: 23px;

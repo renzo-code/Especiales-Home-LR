@@ -20,4 +20,8 @@ const WrapperIcon = styled.div`
   width: 30px;
   cursor: pointer;
   margin: 0 auto;
+
+  @media (max-width: 930px){
+    width: 20px;
+  }
 `
