@@ -46,12 +46,16 @@ const SliderAuto = () => {
 
   const { width } = useWindowDimensions()
   const breakpoint = 1000
+  const breakpoint2 = 500
 
   useEffect(() => {
     if(width <= breakpoint){
       setSlidesToShow(3)
     }
-    else{
+    if(width < breakpoint2 ){
+      setSlidesToShow(2)
+    }
+    if(width > breakpoint){
       setSlidesToShow(5)
     }
   },[width])
@@ -144,7 +148,7 @@ const ContainerCarrousel = styled.div`
     font-weight: 900;
     color: red;
     letter-spacing: -1px;
-    
+
     @media (max-width: 450px){
       margin-bottom: 10px;
       margin-top: 10px;

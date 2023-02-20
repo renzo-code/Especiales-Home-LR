@@ -93,7 +93,7 @@
 .slick-prev:before
 {
     content: '←';
-    display: none;
+    /* display: none; */
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -103,9 +103,9 @@
 .slick-next
 {
     right: 30px;
-    display: none !important;
+    /* display: none !important; */
 }
-@media (max-width: 900px) {
+@media (max-width: 520px) {
     .slick-next{
         right: 10px;
     }
@@ -113,18 +113,18 @@
         left: 3px;
     }
     .slick-prev:before{
-        font-size: 20px;
+        font-size: 25px;
     }
     .slick-next:before{
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 @media (max-width: 450px) {
     .slick-next{
-        right: 1px;
+        right: 7px;
     }
     .slick-prev{
-        left: 1px;
+        left: 7px;
     }
 }
 
